@@ -23,6 +23,8 @@ function copyAtomicNET() {
 
 function copyAtomicEditor() {
 
+    var buildDir = require('os').homedir() + "/source/";
+
     // Copy the Editor binaries
     fs.copySync(buildDir + "Source/AtomicEditor/" + config["config"],
     config.artifactsRoot + "AtomicEditor");
